@@ -1,0 +1,234 @@
+/*iPhoneおよび共通設定*/
+body {
+  width: 100%;
+  font-family: serif;
+  background-color: rgb(43, 40, 40);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+/*Loading画面のデザイン*/
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #6b8e23;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+/* Loading Animation */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Hide Loading Block */
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+.muku_top {
+  display: flex;
+  margin-left: 20px;
+}
+#header {
+  display: flex;
+  margin-top: 3px;
+}
+header {
+  font-size: 45px;
+  width: 30%;
+}
+#header_top {
+  padding-left: 10px;
+}
+nav {
+  margin: 0 0 0 auto;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  padding: 8px 50px;
+  width: 80%;
+}
+#navbar li {
+  padding-left: 5px;
+}
+#service {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.public {
+  background-image: url(../images/home.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 500px;
+}
+#img {
+  background-size: 100%;
+  width: 100%;
+  height: 500px;
+}
+#text_1 {
+  text-align: left;
+  font-size: 40px;
+  width: fit-content;
+  padding-left: 20px;
+  padding-top: 25%;
+}
+#text_2 {
+  font-size: 20px;
+  text-align: left;
+  width: fit-content;
+  margin-top: 10px;
+  padding-left: 25px;
+}
+.concept h2 {
+  font-family: "serif";
+  font-size: 30px;
+  text-align: left;
+  margin: 100px auto 100px 20px;
+}
+.concept p {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 100px;
+}
+.cafe_images {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  overflow: hidden;
+}
+.page {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 10px;
+}
+#home_img {
+  grid-column: 1;
+}
+#home_img_2 {
+  grid-column: 1;
+}
+#home_img_3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+#home_img,
+#home_img_2,
+#home_img_3 {
+  margin-left: 20px;
+}
+.reform {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.home {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.contact {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.reform a,
+.home a,
+.contact a {
+  font-size: 30px;
+  font-family: "serif";
+  margin-bottom: 20px;
+  border-bottom: solid orange;
+}
+.reform p,
+.home p,
+.contact p {
+  padding-top: 20px;
+}
+.SNS {
+  margin: 40px 20px 40px;
+  display: flex;
+  align-items: center;
+}
+#SNS_text {
+  font-size: 20px;
+}
+#SNS_text p {
+  padding: 3px;
+}
+#about_text {
+  text-align: center;
+  padding: 5px 125px;
+}
+#company,
+#place,
+#tel {
+  padding-top: 10px;
+}
+.footer {
+  margin-top: 60px;
+  text-align: center;
+}
+.footer img {
+  margin-left: 33px;
+}
+#about {
+  border-radius: 10px;
+  list-style-type: none;
+  margin-top: 3px;
+  padding-top: 6px;
+  padding-left: 30px;
+  padding-bottom: 6px;
+}
+#news {
+  margin-left: 20px;
+}
+#news ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#news ul li {
+  padding: 20px 0 20px 175px;
+  border-bottom: 1px dotted #6c5f45;
+  color: #ffd700;
+  text-indent: -175px;
+}
+#news ul li time {
+  display: inline-block; /*改行せずに幅を変えられる*/
+  width: 175px;
+  font-weight: bold;
+  color: #6c5f45;
+  text-indent: 0;
+}
+/*iPadの設定*/
+@media screen and (min-width: 340px) {
+  .cafe_images {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+  }
+}
+
+/*PCサイズの設定*/
+@media screen and (min-width: 835px) {
+}
